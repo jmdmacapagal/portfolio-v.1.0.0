@@ -1,5 +1,6 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
+import { H1 } from '../typography/index'
 
 const Wrapper = styled.section`
   display: block;
@@ -20,7 +21,7 @@ const Container = styled.div`
 const Section = ({ children, title }) => {
   return (
     <Wrapper>
-      {title && <h1>{title}</h1>}
+      {title && <H1>{title}</H1>}
       <Container>{children}</Container>
     </Wrapper>
   )
