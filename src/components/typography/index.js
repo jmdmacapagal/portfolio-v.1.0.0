@@ -8,6 +8,8 @@ import PFDBoldItalic from '../../fonts/PlayfairDisplay-BoldItalic.ttf'
 import PFDItalic from '../../fonts/PlayfairDisplay-Italic.ttf'
 import PFDRegular from '../../fonts/PlayfairDisplay-Regular.ttf'
 
+import '../../styles/global.scss'
+
 const GlobalFontStyle = createGlobalStyle`
   @font-face {
     font-family: 'Playfair Display', serif;
@@ -26,6 +28,7 @@ const GlobalFontStyle = createGlobalStyle`
 const Heading1 = styled.h1`
   font-family: 'Playfair Display', serif;
   font-size: 3em;
+  color: $dirty-white;
 `
 
 const H1 = ({ children }) => {
